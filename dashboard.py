@@ -3,10 +3,10 @@ import streamlit as st
 import plotly.express as px
 
 # Load datasets
-users = pd.read_csv("data/users.csv")
-exposures = pd.read_csv("data/ad_exposures.csv")
-engagement = pd.read_csv("data/engagement.csv")
-conversions = pd.read_csv("data/conversion_events.csv")
+users = pd.read_csv("users.csv")
+exposures = pd.read_csv("ad_exposures.csv")
+engagement = pd.read_csv("engagement.csv")
+conversions = pd.read_csv("conversion_events.csv")
 
 # Add engagement score
 engagement["engagement_score"] = (
